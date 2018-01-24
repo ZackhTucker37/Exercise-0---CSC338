@@ -53,4 +53,4 @@ def main():
     print('\n')
     showCounts(word_count)
 
-main()
+main()#will add 2nd main to work with csv module
