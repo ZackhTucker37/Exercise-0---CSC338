@@ -7,6 +7,7 @@ Exercise 0, python review program. Writing as per instructions on paper.
 
 import sys
 import string
+import csv
 
 def readFile(fname):
     foo = open(fname, 'r')
