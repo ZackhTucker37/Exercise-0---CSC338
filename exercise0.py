@@ -45,7 +45,7 @@ def showCounts(dict):
     	else:
     		print (key, dict[key])
 
-def main():
+def gb_main():
     foo1 = readFile(sys.argv[1])
     word_list = foo1.split()
     word_count = countWords(word_list)
@@ -53,5 +53,15 @@ def main():
     showCounts(chars_dict)
     print('\n')
     #showCounts(word_count)
+    
+def woe_main():
+    #print("I'm here")
+    pass
 
-main()#will add 2nd main to work with csv module
+def main():
+    if sys.argv[1] == "gb.txt":
+        gb_main()
+    elif sys.argv[1] == "woe.csv":
+        woe_main()
+        
+main()
