@@ -19,22 +19,22 @@ def readFile(fname):
     return fileText
 
 def countWords(text):
-    my_dick = {}
+    my_dict = {}
     for word in text:
-        if word not in my_dick:
-            my_dick[word] = 1
+        if word not in my_dict:
+            my_dict[word] = 1
         else:
-            my_dick[word] += 1
-    return my_dick
+            my_dict[word] += 1
+    return my_dict
 
 def countChars(text):
-    my_dick = {}
+    my_dict = {}
     for char in text:
-        if char not in my_dick:
-            my_dick[char] = 1
+        if char not in my_dict:
+            my_dict[char] = 1
         else:
-            my_dick[char] += 1
-    return my_dick
+            my_dict[char] += 1
+    return my_dict
 
 def showCounts(dict):
     for key in dict: 
@@ -52,6 +52,6 @@ def main():
     chars_dict = countChars(foo1)
     showCounts(chars_dict)
     print('\n')
-    showCounts(word_count)
+    #showCounts(word_count)
 
 main()#will add 2nd main to work with csv module
